@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="img/TGR.svg" type="image/gif" sizes="16x16">
+    <title>Menu - The Goan Restaurant</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <style>
+        .bg {
+            background: #fff url(img/bg.png) no-repeat fixed center;
+            background-size: cover;
+        }
+
+        .fixed-top {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .tab-pane .row div.col-lg {
+            color: #7c6853;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .nav-link:hover {
+            color: #fff;
+            background-color: #343a40;
+            border: none;
+        }
+
+        .nav-pills .nav-link {
+            color: black;
+            background-color: #343a40;
+            border: none;
+        }
+
+        .nav-item .nav-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: black !important;
+            font-weight: 500;
+        }
+
+
+        .bk {
+            background: red;
+            color: white;
+        }
+
+        .nav-item a.nav-link:hover,
+        .nav-item a.nav-link.active {
+            border-color: #e9ecef #e9ecef #dee2e6;
+            color: white !important;
+            background: black !important;
+
+        }
+
+        .pos {
+            position: absolute;
+            top: .1rem;
+            left: 5rem;
+        }
+
+        .qoute {
+            color: #9c9288;
+            opacity: 1;
+            margin-top: 150px;
+            text-align: center;
+        }
+
+        .borderr {
+            border-right: 1px solid gray !important;
+            border-left: 1px solid gray !important;
+        }
+    </style>
+</head>
+
+<body class="bg" id="top">
+    <div>
+        <img src="img/food.jpg" width="100%" height="80%">
+    </div>
+    <div onscroll="navbar()">
+        <nav class="navv navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="nav-brand" href="index.html">
+                <img src="img/TGR.svg" width="200px" height="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav offset-7"> </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="career.html">Creer With US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bk" href="booking.html">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="qoute">
+        <div class="container">
+            <div class="">
+                <h3>A PLACE WHERE YOU CAN RELISH SOME OF THE OLD FAMILY RECIPES</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-light" style="margin:5rem auto;">
+        <ul class="nav nav-pills mb-3 bg-light justify-content-center bg-dark position-sticky" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-entree-tab" data-toggle="pill" href="#pills-entree" role="tab" aria-controls="pills-entree"
+                    aria-selected="true">ENTREE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-special-tab" data-toggle="pill" href="#pills-special" role="tab" aria-controls="pills-special"
+                    aria-selected="false">SPECIAL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-starter-tab" data-toggle="pill" href="#pills-starter" role="tab" aria-controls="pills-starter"
+                    aria-selected="false">STARTER</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-goan-tab" data-toggle="pill" href="#pills-goan" role="tab" aria-controls="pills-goan" aria-selected="false">GOAN</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-entree" role="tabpanel" aria-labelledby="pills-entree-tab">
+                <div class="row">
+                    <div class="col-lg col-sm-12">
+                        <img class="img-fluid" src="img/greek-salad-495x400.jpeg">
+                    </div>
+                    <div class="col-lg col-sm-12">
+                        Shrimp Cocktail
+                        <br> Boiled Prawns on a bed of iceberg top with Thousand Island dressing
+                        <br>
+                        <br> Caesar Salad
+                        <br> Lettuce, Chicken, Croutons, boiled egg, Mayonnaise dressing
+                        <br>
+                        <br> Roast Chicken Salad
+                        <br> Chicken, lettuce, rocket, tomato with herbs, crush pepper & lime juice
+                        <br>
+                        <br> Tuna Salad
+                        <br> Tuna, tomato, beans, olives, capers garnished with herbs & lemon
+                        <br>
+                        <br> Seafood Pasta Salad
+                        <br> Prawn, calamari, kingfish, tomato, penne, bell pepper, olives, with Mayonnaise dressing
+                        <br>
+                        <br> Watermelon Feta Salad
+                        <br> Watermelon, Feta, Black Olives, Fresh Mint Served with Oregano, Olive Oil & Lime Juice Dressing
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-special" role="tabpanel" aria-labelledby="pills-special-tab">
+                <div class="row">
+                    <div class="col-lg col-sm-12">
+                        <img class="img-fluid" src="img/goan.jpg">
+                    </div>
+                    <div class="col-lg col-sm-12">
+                        Special Goan Fish Thali
+                        <br> Tisro, Crab Xacuti, Tarle Sukha, Vegetables with Rice, Pickle, Papad, Salad, Fish fry & Curry Of
+                        the Day
+                        <br>
+                        <br> Chicken Thali
+                        <br> Chicken Xacuti, Chicken Cafreal, Chicken Vindaloo, Sol Chicken, Vegetables with Rice, Pickle, Papad
+                        & Salad
+                        <br>
+                        <br> American Beef Steak
+                        <br> Beef Cooked in Red Wine topped with Caramelized Onions, Fried Eggs & Served with Boiled Vegetables
+                        plus Choice of Potato
+                        <br>
+                        <br> Lobster Thermidor
+                        <br> Made with Creamy Brandy, Celery Flavored Sauce & Served with Boiled Vegetables & Chips
+                        <br>
+                        <br> Fish Portuguese
+                        <br> King Fish in Tomato Sauce Blended with Herbs, Garlic & Paprika Served with Boiled Vegetables
+                        <br>
+                        <br> Lasagna
+                        <br> Beef mince sautéed with onions, garlic, basil, in tomato sauce layered between pasta sheets & Cheese
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-starter" role="tabpanel" aria-labelledby="pills-starter-tab">
+                <div class="row">
+                    <div class="col-lg col-sm-12">
+
+                    </div>
+                    <div class="col-lg col-sm-12">
+                        <strong>Stuff Crab</strong>
+                        <br> Crab Meat Tossed with Onions, Tomato’s & Goan Spices Stuffed in Crab Shell Topped with Cheese.
+                        <br>
+                        <br> Chicken Satay
+                        <br> Chicken Sticks Marinated & Grilled with In-House Spices & Served with Peanut Sauce
+                        <br>
+                        <br> Kingfish Recheado
+                        <br> Kingfish Satayed in Authentic Portugese Rechead Masala with Red Chilli in Vinegar Base
+                        <br>
+                        <br> Goan Sausage Chilly Fry
+                        <br> Pickled Pork Sausage Tossed in Julian Onions, Tomato & Chili Sauce
+                        <br>
+                        <br> Exotic Stir Fry Vegetables
+                        <br> A Blend of Carrot, Beans, Mushrooms, Zucchini, Broccoli, Served in Soya Garlic Pepper Sauce
+                        <br>
+                        <br> Cheese Chilli Seekh Kebab
+                        <br> A Blend of Cheese, Potato, Paprika, Coriander, Bread Crumbs & Chilli Cooked on a Skewer in Tandoor
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-goan" role="tabpanel" aria-labelledby="pills-goan-tab">
+                <div class="row">
+                    <div class="col-lg col-sm-12">
+
+                    </div>
+                    <div class="col-lg col-sm-12">
+                        Kingfish Curry Rice
+                        <br> Kingfish Cooked in Authentic Coconut Gravy & Served with Rice
+                        <br>
+                        <br> Shark Xacuti
+                        <br> Cubes of Shark Cooked in Thick Coconut Gravy Prepped with 21 Different Ingredients
+                        <br>
+                        <br> Chicken Vindaloo
+                        <br> Chicken Cooked in a Red Sauce with Red Chilli Soaked in Goan Vinegar
+                        <br>
+                        <br> Pork Sorpotel
+                        <br> Pork Meat with Lever & Fat, Roasted Spices Soaked in Home Brewed Vinegar & Set to Mature
+                        <br>
+                        <br> Roast Beef
+                        <br> Beef Marinated & Roasted with Kashmiri chilli, Cloves, Cinnamon, Bayleaf, & Served with Goan Salad
+                        <br>
+                        <br> Vegetable Caldin
+                        <br> A Portugese Dish, Mildly Spiced Thin Curry Cooked with Vegetables & Coconut Milk
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <div class="row pt-3 text-white">
+                <div class="col">
+                    <h5>Contact Information</h5>
+                    <address>G-2 Kalika Square,Gogal,Margao, Salcete - Goa. 403 601</address>
+                    <h5>FOR BOOKING: </h5>
+                    (+91)7350061373
+                    <h5>FOLLOW US ON:</h5>
+
+                </div>
+                <div class="col borderr">
+                    <h5>
+                        <strong>Restaurant hours</strong>
+                    </h5>
+                    <h5>LUNCH:</h5>
+                    <p>
+                        <strong>Monday-Friday:</strong> 11:30AM - 2:00PM</p>
+                    <h5>DINNER:</h5>
+                    <p>
+                        <strong>Monday-Friday:</strong> 5:30PM - 11:00PM</p>
+                    <p>
+                        <strong>Saturday-Sunday:</strong> 4:30PM - 10:00PM</p>
+                </div>
+                <div class="col offset-1">
+                    <h4>Useful Links</h4>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="index.html">Home</a>
+                    </li>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="menu.html">Menus</a>
+                    </li>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="booking.html">Reservation</a>
+                    </li>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="about.html">About Us</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 200) {
+                    $(".navv").css("background", "#fff");
+                }
+                else {
+                    $(".navv").css("background", "");
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

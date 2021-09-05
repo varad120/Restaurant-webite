@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="img/TGR.svg" type="image/gif" sizes="16x16">
+    <title>Career - The Goan Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .bg {
+            background: #fff url(img/bg.png) no-repeat fixed center;
+            background-size: cover;
+        }
+
+        .borderr {
+            border-right: 1px solid gray !important;
+            border-left: 1px solid gray !important;
+        }
+
+        .bk {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="nav-brand" href="index.html">
+            <img src="img/TGR.svg" width="200px" height="50px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav offset-7"> </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="career.html">Creer With US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bk" href="booking.html">Book Now</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container bg-rgba(221, 89, 89, 0.459) bg-light">
+
+        <br>
+        <br>
+        <h3 class="text-center"> If yes,drop us a line.We are always looking for new talentfor joining the dining room and kitchen teams at our growing
+            teams at our growing teams of restaurants</h3>
+        <br>
+        <br>
+        <div class="container" style="justify-content: left;">
+            <img src="img/BOOK-NOW.png" alt="">
+        </div>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="First name">
+                    <label for="exampleInputEmail1"></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1"></label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone number">
+                </div>
+                <div class="form-group">
+                    <textarea rows="10" cols="100" type="text" class="form-control">
+                    cover letter
+                 </textarea>
+                </div>
+                Resume:
+                <br>
+                <button type="submit" class="btn btn-dark text-white">Browse</button>no file selected
+            </form>
+            <center>
+                <button type="submit" class="btn btn-danger text-link ">Submit</button>
+            </center>
+        </div>
+        <br><br>
+    </div>
+    <br><br><br>
+
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <div class="row pt-3 text-white">
+                <div class="col">
+                    <h5>Contact Information</h5>
+                    <address>G-2 Kalika Square,Gogal,Margao, Salcete - Goa. 403 601</address>
+                    <h5>FOR BOOKING: </h5>
+                    (+91)7350061373
+                    <h5>FOLLOW US ON:</h5>
+
+                </div>
+                <div class="col borderr">
+                    <h5>
+                        Restaurant hours
+                    </h5>
+                    <h5>LUNCH:</h5>
+                    <p>
+                        Monday-Friday: 11:30AM - 2:00PM</p>
+                    <h5>DINNER:</h5>
+                    <p>
+                        Monday-Friday: 5:30PM - 11:00PM</p>
+                    <p>
+                        Saturday-Sunday: 4:30PM - 10:00PM</p>
+                </div>
+                <div class="col offset-1">
+                    <h4>Useful Links</h4>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="index.html">Home</a>
+                    </li>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="menu.html">Menus</a>
+                    </li>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="booking.html">Reservation</a>
+                    </li>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="about.html">About Us</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ff.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 200) {
+                    $(".navv").css("background", "#fff");
+                }
+                else {
+                    $(".navv").css("background", "");
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

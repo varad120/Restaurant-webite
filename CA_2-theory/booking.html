@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="img/TGR.svg" type="image/gif" sizes="16x16">
+    <title>Booking - The Goan Restaurant</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .bg {
+            background: #fff url(img/bg.png) no-repeat fixed center;
+            background-size: cover;
+        }
+
+        .fixed-top {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .nav-item .nav-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: #343a40 !important;
+        }
+
+        .nav-item a.nav-link:hover {
+            border-color: #e9ecef #e9ecef #dee2e6;
+            color: black;
+            background-color: rgb(255, 254, 180);
+
+        }
+
+        .nav-item .nav-link.active {
+            color: #495057;
+            background-color: rgb(180, 219, 255);
+            border-color: #dee2e6 #dee2e6 #fff;
+        }
+
+        .nav-brand {
+            display: inline-block;
+            padding-top: 0.1125rem;
+            padding-bottom: 0.3125rem;
+            margin-right: 1rem;
+            white-space: nowrap;
+        }
+
+        .qoute {
+            color: #9c9288;
+            opacity: 1;
+            margin-top: 150px;
+            text-align: center;
+        }
+
+        .borderr {
+            border-right: 1px solid gray !important;
+            border-left: 1px solid gray !important;
+        }
+    </style>
+</head>
+
+<body class="bg">
+    <div>
+        <img class="img-fluid" src="img/dish-deal.jpg">
+    </div>
+    <div onscroll="navbar()">
+        <nav class="navv navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="nav-brand" href="index.html">
+                <img src="img/TGR.svg" width="200px" height="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav offset-7"> </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="career.html">Creer With US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="booking.html">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="qoute justify-content-center">
+        <div class="container">
+            <div>
+                <h3>WE WOULD LOVE TO HEAR FORM YOU</h3>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="container bg-white" style="padding:1rem;">
+        <div class="row">
+            <div class="col">
+                <h2>BOOK NOW</h2>
+                <p>We will confirm your order via E-mail.</p>
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="">Name
+                                <span style="color:red;">*</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col">
+                            <label for="">E-mail
+                                <span style="color:red;">*</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="email">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <label for="">Message
+                                <span style="color:red;">*</span>
+                            </label>
+                            <textarea id="my-input" class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                </form>
+                <br>
+                <div>
+                    <h2>BOOK BY
+                        <strong>PHONE</strong>
+                    </h2>
+                    <p>
+                        For reservations, please feel free to drop in a line or call us on the number mentioned below.
+                        <br>
+                        <strong class="text-danger">(+91) 88060 77550</strong>
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d962.1883260144978!2d73.98349778806765!3d15.281243399332503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb22cdb6d18e7%3A0x45ebdd0ac532a9b2!2sSwami+Chinmayanand+Road%2C+Gogol+Housing+Board%2C+Margao%2C+Goa+403601!5e0!3m2!1sen!2sin!4v1536142734161"
+                    width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid bg-white">
+        <div class="row">
+            <div class="col" style="padding:3rem;">
+                <h2>Group Bookings</h2>
+                <p>For up to 20 persons</p>
+                <img class="img-fluid" src="img/book1.jpg" alt="">
+                <br>
+                <br>
+                <p>The perfect place to entertain friends, celebrate a special occasion, or hold a business function, our delicious
+                    food, welcoming atmosphere, & friendly staff with their attentive service make it an ideal setting for
+                    your special day.</p>
+            </div>
+            <div class="col" style="padding:3rem;">
+                <h2>EVENT Bookings</h2>
+                <p>For up to 60 persons</p>
+                <img class="img-fluid" src="img/book2.jpg" alt="">
+                <br>
+                <br>
+                <p>Our Restaurant can host semi-private events for up to 60 guests with crafted menus created just for you.
+                    Our comfortable and inviting space is the perfect setting for your next anniversary, birthday party,
+                    or corporate event.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <div class="row pt-3 text-white">
+                <div class="col">
+                    <h5>Contact Information</h5>
+                    <address>G-2 Kalika Square,Gogal,Margao, Salcete - Goa. 403 601</address>
+                    <h5>FOR BOOKING: </h5>
+                    (+91)7350061373
+                    <h5>FOLLOW US ON:</h5>
+
+                </div>
+                <div class="col borderr">
+                    <h5>
+                        Restaurant hours
+                    </h5>
+                    <h5>LUNCH:</h5>
+                    <p>
+                        Monday-Friday: 11:30AM - 2:00PM</p>
+                    <h5>DINNER:</h5>
+                    <p>
+                        Monday-Friday: 5:30PM - 11:00PM</p>
+                    <p>
+                        Saturday-Sunday: 4:30PM - 10:00PM</p>
+                </div>
+                <div class="col offset-1">
+                    <h4>Useful Links</h4>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="index.html">Home</a>
+                    </li>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="menu.html">Menus</a>
+                    </li>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="booking.html">Reservation</a>
+                    </li>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="about.html">About Us</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ff.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+
+                if (scroll > 200) {
+                    $(".navv").css("background", "#fff");
+                }
+                else {
+                    $(".navv").css("background", "");
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

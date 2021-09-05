@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="img/TGR.svg" type="image/gif" sizes="16x16">
+    <title>The Goan Restaurant</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .bg {
+            background: url(img/bg.png) no-repeat fixed center;
+            background-size: cover;
+        }
+
+        .bgm {
+            background: url(img/bgm.jpg) no-repeat fixed center;
+            background-size: cover;
+        }
+
+        .fixed-top {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .nav-item .nav-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: black !important;
+        }
+
+        .nav-item a.nav-link:hover,
+        .nav-item a.nav-link.active {
+            border-color: #e9ecef #e9ecef #dee2e6;
+            color: black;
+            background: white;
+
+        }
+
+        .nav-brand {
+            display: inline-block;
+            padding-top: 0.1125rem;
+            padding-bottom: 0.3125rem;
+            margin-right: 1rem;
+            white-space: nowrap;
+        }
+
+        .borderr {
+            border-right: 1px solid gray !important;
+            border-left: 1px solid gray !important;
+        }
+
+        .bk {
+            background: red;
+            color: white;
+        }
+    </style>
+    <script>
+        var x = 1;
+    </script>
+</head>
+
+<body id="top" class="bg">
+    <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/c.jpg">
+                </div>
+                <div class="carousel-item" >
+                    <img class="d-block w-100" src="img/c5.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/c6.jpg">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/c7.jpg">
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="img/c8.jpg">
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img class="d-block w-100" src="img/c9.jpg">
+    </div>
+    </div>
+    <div class="carousel-item">
+        <img class="d-block w-100" src="img/c10.jpg">
+    </div>
+    </div>
+    <div class="carousel-item">
+        <img class="d-block w-100" src="img/c11.jpg">
+    </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+    <div onscroll="navbar()">
+        <nav class="navv navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="nav-brand" href="index.html">
+                <img src="img/TGR.svg" width="200px" height="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav offset-7"> </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="career.html">Creer With US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bk" href="booking.html">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Button trigger modal -->
+    <button type="button" id="dropdownhide" onscroll="autoclick()" class="btn btn-light " data-toggle="modal" data-target="#exampleModalCenter">
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg container">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">
+                        <strong>OUR NEWSLATER</strong>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Sign up here to receive interesting updates</p>
+                    <input type="email" class="form-control" id="colFormLabel" style="width:200px">
+                    <br>
+                    <button class="btn btn-info" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <div id="anm" class="row">
+                <div class="col bg-light animated slideInRight">
+                    <div class="card text-center" style="border:none;">
+                        <img class="card-img-top img-fluid" src="img/picture1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <strong>Always</strong>
+                                <em> fresh</em>
+                            </h5>
+                            <p class="card-text" style="color:#8c8b8b;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col bg-light animated slideInUp">
+                    <div class="card text-center" style="border:none;">
+                        <img class="card-img-top img-fluid" src="img/picture2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <strong>Eco</strong>
+                                <em> products</em>
+                            </h5>
+                            <p class="card-text" style="color:#8c8b8b;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col bg-light  animated slideInLeft">
+                    <div class="card text-center" style="border:none;">
+                        <img class="card-img-top img-fluid" src="img/picture3.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align:center;">
+                                <strong>Healthy</strong>
+                                <em> desserts</em>
+                            </h5>
+                            <p class="card-text" style="color:#8c8b8b;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+        </div>
+    </div>
+    <br>
+    <br>
+    <button type="button" onmouseover="autoclick2()" id="menuhide" class="btn container-fluid" style="background: none;" data-toggle="modal"
+        data-target="#exampleModal">
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class=" st-container animated slideInUp bg-light ">
+                        <div class="text-center ">
+                            <img src="img/cou.png ">
+                            <h1>Enjoy The Best Cuisine</h1>
+                            <h3>---------- on this Planet ----------</h3>
+                        </div>
+                        <div class="row ">
+                            <div class="col offset-1 ">
+                                <h1 style="text-align: left; color: tomato; ">Starters</h1>
+                                <p style="text-align: left; ">
+                                    <span style="color: #000000; font-size: 16px; ">Mackerl Curry</span>
+                                </p>
+                                <hr>
+                                <em>Enjoy The Best Goan Delicious Mackerel Curry</em>
+                                <p style="text-align: left; ">
+                                    <span style="color: #000000; font-size: 16px; ">Mackerl Curry</span>
+                                </p>
+                                <em>Enjoy The Best Goan Delicious Mackerel Curry</em>
+                                <br>
+                                <p style="text-align: left; ">
+                                    <span style="color: #000000; font-size: 16px; ">Mackerl Curry</span>
+                                </p>
+                                <em>Enjoy The Best Goan Delicious Mackerel Curry</em>
+                            </div>
+
+
+                            <div class="col ">
+
+                                <h1 style="text-align: left; color: tomato; ">Mains</h1>
+                                <p style="text-align: left; ">
+                                    <span style="color: #000000; font-size: 16px; ">Mackerl Curry</span>
+                                </p>
+                                <hr>
+                                <em>Enjoy The Best Goan Delicious Mackerel Curry</em>
+                                <p style="text-align: left; ">
+                                    <span style="color: #000000; font-size: 16px; ">Mackerl Curry</span>
+                                </p>
+                                <em>Enjoy The Best Goan Delicious Mackerel Curry</em>
+                                <br>
+                                <p style="text-align: left; ">
+                                    <span style="color: #000000; font-size: 16px; ">Mackerl Curry</span>
+                                </p>
+                                <em>Enjoy The Best Goan Delicious Mackerel Curry</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">
+                        <a class="text-white" href="menu.html">Menu</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background:#fff url(img/pexels-photo-941861.jpeg) no-repeat center;background-size: cover; ">
+        <div class="container">
+            <div class="text-center text-light">
+                <h1>
+                    <u>Book a Table</u>
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col text-light">
+                    <form>
+                        <label>No Of Pople</label>
+                        <select name="dataselect" class="form-control">
+                            <option value="1">1 People</option>
+                            <option value="2">2 People</option>
+                            <option value="3">4 People</option>
+                            <option value="4">8 People</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="col text-light">
+                    <form>
+                        <label>Date</label>
+                        <input name="dateselection" type="date" class="form-control input-md">
+                    </form>
+                </div>
+                <div class="col text-light">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Time</label>
+                        <select class="form-control">
+                            <option value="1">9:45am</option>
+                            <option value="2">12PM</option>
+                            <option value="3">2PM</option>
+                            <option value="4">4PM</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <input name="dateselection" type="submit" class="form-control" value="Book Now">
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <div class="row pt-3 text-white">
+                <div class="col">
+                    <h5>Contact Information</h5>
+                    <address>G-2 Kalika Square,Gogal,Margao, Salcete - Goa. 403 601</address>
+                    <h5>FOR BOOKING: </h5>
+                    (+91)7350061373
+                    <h5>FOLLOW US ON:</h5>
+
+                </div>
+                <div class="col borderr">
+                    <h5>
+                        <strong>Restaurant hours</strong>
+                    </h5>
+                    <h5>LUNCH:</h5>
+                    <p>
+                        <strong>Monday-Friday:</strong> 11:30AM - 2:00PM</p>
+                    <h5>DINNER:</h5>
+                    <p>
+                        <strong>Monday-Friday:</strong> 5:30PM - 11:00PM</p>
+                    <p>
+                        <strong>Saturday-Sunday:</strong> 4:30PM - 10:00PM</p>
+                </div>
+                <div class="col offset-1">
+                    <h4>Useful Links</h4>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="index.html">Home</a>
+                    </li>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="menu.html">Menus</a>
+                    </li>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="booking.html">Reservation</a>
+                    </li>
+                    <li style="list-style: none;">
+                        <a style="color:white;" href="about.html" target="_blank``">About Us</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ff.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script>
+        function autoclick() {
+            document.getElementById("dropdownhide").click(); // Click on the checkbox
+        }
+        function autoclick2() {
+            if (x == 2) {
+                document.getElementById("menuhide").click(); // Click on the checkbox
+                x += 1;
+            }
+        }
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 500) {
+                    if (x == 1) {
+                        autoclick();
+                        x += 1;
+                    }
+                }
+                if (scroll > 200) {
+                    $(".navv").css("background", "#fff");
+                }
+                else {
+                    $(".navv").css("background", "");
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
